@@ -12,6 +12,7 @@
         <title>Gracias | ServiDatos</title>
     </head>
     <body>
-        <h1>Gracias por confiar en nosotros</h1>
+        <% System.out.println("Here");              %>
+        <h1>Gracias por contactarnos. Estaremos respondiendo su solicitud en el menor tiempo posible.</h1>
     </body>
 </html>
