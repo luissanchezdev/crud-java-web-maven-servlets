@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Gracias | ServiDatos</title>
+        <title>Confirmación de registro | ServiDatos</title>
         <link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">
         <link type="text/css" rel="stylesheet" href="./css/styles.css">
     </head>
@@ -26,7 +26,7 @@
             </nav>
         </header>
         <div class="page-thank-you">
-            <h2>Gracias por contactarnos. Responderemos en el menor tiempo posible</h2>            
+            <h2>Gracias por contactarnos. Responderemos en el menor tiempo posible</h2>         
         </div>
     </body>
 </html>

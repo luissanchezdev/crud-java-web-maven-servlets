@@ -36,7 +36,7 @@
                     for(UsuarioModel user : listaUsuarios){
                 %>
                 <div class="card">
-                    <p><span>ID:</span> <%= count %></p>
+                    <p><span>ID:</span> <%= user.getId() %></p>
                     <p><span>Nombre:</span> <%= user.getName() %> </p>
                     <p><span>Teléfono:</span> <%= user.getPhone()  %></p>
                     <p><span>Dirección:</span> <%= user.getAdress()  %></p>

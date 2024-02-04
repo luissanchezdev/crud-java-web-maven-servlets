@@ -1,6 +1,6 @@
 <%-- 
-    Document   : dashboard
-    Created on : 3 feb 2024, 22:50:57
+    Document   : agradecimiento
+    Created on : 31 ene 2024, 01:21:10
     Author     : luissdev
 --%>
 
@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Dashboard | ServiDatos</title>
+        <title>Gracias | ServiDatos</title>
         <link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">
         <link type="text/css" rel="stylesheet" href="./css/styles.css">
     </head>
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
     <body>
         <header>
             <h1>Servi<span>Datos</span></h1>
@@ -24,13 +25,8 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="form-container">
-                <h2>Ver todos los usuarios</h2>
-                <form action="ListaUsuariosServlet" method="GET">
-                    <button>Ver</button>
-                </form>
-            </section>
-        </main>
+        <div class="page-thank-you">
+            <h2>Se ha registrado exitosamente.</h2>            
+        </div>
     </body>
 </html>

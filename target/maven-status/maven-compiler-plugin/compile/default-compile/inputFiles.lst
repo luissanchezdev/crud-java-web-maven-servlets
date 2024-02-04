@@ -1,5 +1,7 @@
 /Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/model/UsuarioModel.java
+/Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/controller/ListaUsuariosServlet.java
 /Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/controller/FormRegisterSvt.java
 /Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/controller/usuarioController.java
+/Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/controller/FormLoginServlet.java
 /Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/dao/ConexionMySQLDao.java
 /Users/luissdev/NetBeansProjects/servidatos/src/main/java/com/pqrcompany/servidatos/resources/JakartaEE8Resource.java

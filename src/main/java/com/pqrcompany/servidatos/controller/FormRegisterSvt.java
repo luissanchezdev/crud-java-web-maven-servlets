@@ -37,41 +37,45 @@ public class FormRegisterSvt extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        List<UsuarioModel> listaUsuarios = new ArrayList<>();
+        /*List<UsuarioModel> listaUsuarios = new ArrayList<>();
         listaUsuarios.add(new UsuarioModel(1,"maria", "320454", "alvarez", "example@example.com", "2023"));
         listaUsuarios.add(new UsuarioModel(1,"sebas", "320454", "alvarez", "example@example.com", "2023"));
         listaUsuarios.add(new UsuarioModel(1,"luis", "320454", "alvarez", "example@example.com", "2023"));
         
         HttpSession actualSesion = request.getSession();
         actualSesion.setAttribute("listaUsuarios", listaUsuarios);
-        response.sendRedirect("lista-usuarios.jsp");
+        response.sendRedirect("lista-usuarios.jsp"); */
         
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("Esta ingresando al controll");
         String name = request.getParameter("name");
-        System.out.println(name);
+        String phone = request.getParameter("phone");
+        String address = request.getParameter("address");
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
-        System.out.println("password");
         
             try (Connection conexion = ConexionMySQLDao.obtenerConexion()) {
-                String consulta = "INSERT INTO usuarios (nombre, telefono, direccion) VALUES (?, ?, ?)";
+                String consulta = "INSERT INTO usuarios (name, phone, address, email, password) VALUES (?, ?, ?, ?, ?)";
                     try (PreparedStatement statement = conexion.prepareStatement(consulta)) {
-                        // Paso 4: Establecer los valores de los parámetros
-                        statement.setString(1, "cristina estrada");
-                        statement.setString(2, "3222592301");
-                        statement.setString(3, "alvarez");
 
-                        // Paso 5: Ejecutar la consulta de inserción
-                        int filasAfectadas = statement.executeUpdate();
+                        statement.setString(1, name);
+                        statement.setString(2, phone);
+                        statement.setString(3, address);
+                        statement.setString(4, email);
+                        statement.setString(5, password);
 
-                        if (filasAfectadas > 0) {
+
+                        int filasDevueltas = statement.executeUpdate();
+
+                        if (filasDevueltas > 0) {
                             System.out.println("Inserción exitosa.");
+                            response.sendRedirect("registro-exitoso.jsp");
                         } else {
                             System.out.println("No se pudo insertar el registro.");
+                            response.sendRedirect("register.html");
                         }
                     } catch (SQLException ex) {
                         ex.printStackTrace();
@@ -79,9 +83,7 @@ public class FormRegisterSvt extends HttpServlet {
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
-                
-        
-        response.sendRedirect("agradecimiento.jsp");
+           
     }
 
     /**
