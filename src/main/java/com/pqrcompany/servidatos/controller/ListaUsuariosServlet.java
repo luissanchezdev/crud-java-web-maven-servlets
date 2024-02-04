@@ -42,13 +42,11 @@ public class ListaUsuariosServlet extends HttpServlet {
                 String consulta = "SELECT * FROM usuarios;";
                     try (Statement statement = conexion.createStatement()) {
 
-
                         ResultSet filasDevueltas = statement.executeQuery(consulta);
-                        
+                        System.out.println("Filas Devueltas");
                         System.out.println(filasDevueltas);
                         
 
-                        if (filasDevueltas.next()) {
                             System.out.println("inside if");
                             List<UsuarioModel> listaUsuarios = new ArrayList<>();
                             while(filasDevueltas.next()){
@@ -70,10 +68,11 @@ public class ListaUsuariosServlet extends HttpServlet {
                             System.out.println(listaUsuarios);
                             System.out.println("Se ha registrado exitosamente");
                             response.sendRedirect("lista-usuarios.jsp");
-                        } else {
-                            System.out.println("Datos erroneos");
-                            response.sendRedirect("login.html");
-                        }
+                         
+//                        else {
+//                            System.out.println("Datos erroneos");
+//                            response.sendRedirect("login.html");
+//                        }
                     } catch (SQLException ex) {
                         ex.printStackTrace();
                     } 
