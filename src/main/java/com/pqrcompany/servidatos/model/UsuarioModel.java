@@ -13,15 +13,19 @@ public class UsuarioModel {
     private int id;
     private String name;
     private String phone;
-    private String adress;
+    private String address;
+    private String email;
+    private String password;
 
-    public UsuarioModel(int id, String name, String phone, String adress) {
+    public UsuarioModel(int id, String name, String phone, String adress, String email, String password) {
         this.id = id;
         this.name = name;
         this.phone = phone;
-        this.adress = adress;
-    }      
-            
+        this.address = adress;
+        this.email = email;
+        this.password = password;
+    }
+
     public int getId() {
         return id;
     }
@@ -47,10 +51,32 @@ public class UsuarioModel {
     }
 
     public String getAdress() {
-        return adress;
+        return address;
     }
 
     public void setAdress(String adress) {
-        this.adress = adress;
+        this.address = adress;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    
+            
+    
+    
+    
 }

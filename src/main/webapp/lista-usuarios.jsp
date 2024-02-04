@@ -31,17 +31,16 @@
             <section class="lista-usuarios">
                 <% 
                     List<UsuarioModel> listaUsuarios = (List) request.getSession().getAttribute("listaUsuarios");
-                    System.out.println(listaUsuarios);
                     int count = 1;
 
                     for(UsuarioModel user : listaUsuarios){
-                      System.out.println(user.getName());
                 %>
                 <div class="card">
-                    <p><span>ID</span> : <%= count %></p>
-                    <p><span>Nombre</span> : <%= user.getName() %> </p>
+                    <p><span>ID:</span> <%= count %></p>
+                    <p><span>Nombre:</span> <%= user.getName() %> </p>
                     <p><span>Teléfono:</span> <%= user.getPhone()  %></p>
-                    <p><span>Dirección</span>: <%= user.getAdress()  %>
+                    <p><span>Dirección:</span> <%= user.getAdress()  %></p>
+                    <p><span>Correo electrónico:</span>: <%= user.getEmail()  %></p>
                 </div>
                 <% count = count +1;  %>
                 <%  }%>

@@ -168,12 +168,20 @@ a{
 
 .hero{
     background-image: url('../img/hero.jpg');
-    height: calc(100vh - 10rem);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
     width: 100%;
     padding: 0;
     margin:0;
     object-fit:cover;
     position: relative;
+}
+
+@media(min-width:768px){
+    .hero{
+        height: calc(100vh - 10rem);
+    }
 }
 
 .hero p{

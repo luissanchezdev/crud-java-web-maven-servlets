@@ -38,9 +38,9 @@ public class FormRegisterSvt extends HttpServlet {
             throws ServletException, IOException {
         
         List<UsuarioModel> listaUsuarios = new ArrayList<>();
-        listaUsuarios.add(new UsuarioModel(1,"maria", "320454", "alvarez"));
-        listaUsuarios.add(new UsuarioModel(1,"sebas", "320454", "alvarez"));
-        listaUsuarios.add(new UsuarioModel(1,"luis", "320454", "alvarez"));
+        listaUsuarios.add(new UsuarioModel(1,"maria", "320454", "alvarez", "example@example.com", "2023"));
+        listaUsuarios.add(new UsuarioModel(1,"sebas", "320454", "alvarez", "example@example.com", "2023"));
+        listaUsuarios.add(new UsuarioModel(1,"luis", "320454", "alvarez", "example@example.com", "2023"));
         
         HttpSession actualSesion = request.getSession();
         actualSesion.setAttribute("listaUsuarios", listaUsuarios);
