@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Iniciar sesión | ServiDatos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+       <header>
+            <h1>Servi<span>Datos</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="form-container">
+                <h2>Inicio de sesión</h2>
+                <form action="FormRegisterSvt" method="POST" id="formLogin">
+                    <div class="div-input">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" required placeholder="example@example.com">
+                    </div>
+                    <div class="div-input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" required placeholder="***">
+                    </div>
+                    <button class="btn-submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

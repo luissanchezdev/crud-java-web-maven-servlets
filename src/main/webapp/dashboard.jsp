@@ -1,8 +1,15 @@
+<%-- 
+    Document   : dashboard
+    Created on : 3 feb 2024, 22:50:57
+    Author     : luissdev
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Iniciar Sesión | ServiDatos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dashboard | ServiDatos</title>
         <link rel="stylesheet" href="https://unpkg.com/boltcss/bolt.min.css">
         <link type="text/css" rel="stylesheet" href="./css/styles.css">
     </head>
@@ -17,8 +24,13 @@
                 </ul>
             </nav>
         </header>
-        <div class="hero">
-            <p>Bienvenidos a ServiDatos</p>
-        </div>
+        <main>
+            <section class="form-container">
+                <h2>Ver todos los usuarios</h2>
+                <form action="FormRegisterSvt" method="GET">
+                    <button>Ver</button>
+                </form>
+            </section>
+        </main>
     </body>
 </html>

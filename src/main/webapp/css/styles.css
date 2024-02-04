@@ -1,0 +1,224 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 feb 2024, 20:28:12
+    Author     : luissdev
+*/
+
+:root{
+    --orange: #FF9843;
+    --yellow: #FFDD95;
+    --blueLight: #86A7FC;
+    --blue: #3468C0;
+    --dark: #111;
+    --darkDegrade: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    --white: #fff;
+}
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 1.6rem;
+    height: 100%;
+    min-height: 100vh;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    min-height: calc(100vh - 10rem);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+    width: 100%;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+form{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    place-items: center center;
+    gap:2rem;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
+@media(min-width:768px){
+    form{
+        max-width: 500px;
+    }
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    place-items: start center;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    max-width: 100%;
+    transition: 0.5s ease all;
+}
+
+input:focus, input:hover{
+    box-shadow: 0 0 5px var(--orange);
+}
+
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--yellow);
+    color: var(--dark);
+    transition: all ease 0.5s;    
+}
+
+button:hover {
+    background-color: var(--orange);
+}
+
+nav{
+    display: flex;
+    place-items: center center;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    place-items:center center;
+    background-color: var(--dark);
+    background: var(--darkDegrade);
+    color: var(--white);
+}
+
+header h1{
+    font-size: 3rem;
+    display: block;
+}
+
+h1  span{
+    color: var(--orange);
+}
+
+ul {
+    display:flex;
+    place-items: center center;
+    gap: 1rem;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    color: var(--white);
+    transition: all 0.5s ease;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+li:hover a{
+    background-color: var(--orange);
+    color: var(--dark);
+}
+
+a{
+    
+}
+
+.page-thank-you {
+    height: 100%;
+    display:flex;
+    place-content:center center;
+}
+
+
+.page-thank-you h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 2rem 4rem;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.hero{
+    background-image: url('../img/hero.jpg');
+    height: calc(100vh - 10rem);
+    width: 100%;
+    padding: 0;
+    margin:0;
+    object-fit:cover;
+    position: relative;
+}
+
+.hero p{
+    position:absolute;
+    left:100px;
+    bottom:100px;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: 0 0 5px var(--dark);
+}
+
+.hero p::selection{
+    background-color: var(--orange);
+}
+
+.form-container{
+    height: 100%;
+    display:flex;
+    place-items: center center;
+    box-shadow: 0 0 5px var(--dark);
+    border-radius: 1rem;
+}
+
+.form-container{
+    max-width: 600px;
+}
+
+.lista-usuarios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+
+}
+
+.card {
+    padding: 4rem 2rem;
+    display:flex;
+    flex-direction: column;
+    place-items: star center;
+    gap: 0.5rem;
+    box-shadow: 0 0 5px var(--dark);
+    border-radius: 10px;
+}
+
+.card span{
+    font-weight: 700;
+}

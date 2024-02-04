@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"FormContactServlet"},{"p":"com.pqrcompany.mavenproject3.resources","l":"JakartaEE8Resource"},{"p":"com.pqrcompany.mavenproject3","l":"JakartaRestConfiguration"}];updateSearchResults();
